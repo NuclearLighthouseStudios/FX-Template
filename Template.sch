@@ -1,0 +1,218 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Pedal Protoboard"
+Date "2020-03-11"
+Rev "r01"
+Comp "Nuclear Lighthouse Studios"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+9V #PWR03
+U 1 1 5BED31CD
+P 5400 6700
+F 0 "#PWR03" H 5400 6550 50  0001 C CNN
+F 1 "+9V" H 5415 6873 50  0000 C CNN
+F 2 "" H 5400 6700 50  0001 C CNN
+F 3 "" H 5400 6700 50  0001 C CNN
+	1    5400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J2
+U 1 1 5BE333FF
+P 4950 6950
+F 0 "J2" H 4720 6900 50  0000 R CNN
+F 1 "Barrel_Jack_Switch" H 4720 6991 50  0000 R CNN
+F 2 "NLS:BarrelJack_Horizontal_Short" H 5000 6910 50  0001 C CNN
+F 3 "~" H 5000 6910 50  0001 C CNN
+	1    4950 6950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5250 6850 5400 6850
+Wire Wire Line
+	5250 7050 5400 7050
+$Comp
+L power:GND #PWR0101
+U 1 1 5BE6DA83
+P 5400 7200
+F 0 "#PWR0101" H 5400 6950 50  0001 C CNN
+F 1 "GND" H 5405 7027 50  0000 C CNN
+F 2 "" H 5400 7200 50  0001 C CNN
+F 3 "" H 5400 7200 50  0001 C CNN
+	1    5400 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6950 5400 6950
+Wire Wire Line
+	5400 6950 5400 6850
+Connection ~ 5400 6850
+$Comp
+L Connector:Conn_01x06_Female J1
+U 1 1 5D2BD68E
+P 2200 6850
+F 0 "J1" H 2228 6826 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 2228 6735 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2200 6850 50  0001 C CNN
+F 3 "~" H 2200 6850 50  0001 C CNN
+	1    2200 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 6850 0    50   Input ~ 0
+Output
+Text GLabel 1850 6950 0    50   Output ~ 0
+Input
+$Comp
+L power:+9V #PWR0104
+U 1 1 5D2C4E57
+P 1850 7050
+F 0 "#PWR0104" H 1850 6900 50  0001 C CNN
+F 1 "+9V" V 1865 7178 50  0000 L CNN
+F 2 "" H 1850 7050 50  0001 C CNN
+F 3 "" H 1850 7050 50  0001 C CNN
+	1    1850 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D2C59B4
+P 1950 7200
+F 0 "#PWR0105" H 1950 6950 50  0001 C CNN
+F 1 "GND" H 1955 7027 50  0000 C CNN
+F 2 "" H 1950 7200 50  0001 C CNN
+F 3 "" H 1950 7200 50  0001 C CNN
+	1    1950 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6700 5400 6850
+Wire Wire Line
+	5400 7050 5400 7200
+Wire Wire Line
+	1950 7200 1950 7150
+Wire Wire Line
+	1950 7150 2000 7150
+Wire Wire Line
+	1850 6950 2000 6950
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D6C6DFE
+P 5450 6850
+F 0 "#FLG0101" H 5450 6925 50  0001 C CNN
+F 1 "PWR_FLAG" V 5450 6978 50  0000 L CNN
+F 2 "" H 5450 6850 50  0001 C CNN
+F 3 "~" H 5450 6850 50  0001 C CNN
+	1    5450 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D6C755A
+P 5450 7050
+F 0 "#FLG0102" H 5450 7125 50  0001 C CNN
+F 1 "PWR_FLAG" V 5450 7178 50  0000 L CNN
+F 2 "" H 5450 7050 50  0001 C CNN
+F 3 "~" H 5450 7050 50  0001 C CNN
+	1    5450 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 7050 5450 7050
+Connection ~ 5400 7050
+Wire Wire Line
+	5400 6850 5450 6850
+Wire Wire Line
+	1950 6650 1950 6600
+Wire Wire Line
+	1850 6850 2000 6850
+Wire Wire Line
+	1750 6750 2000 6750
+Wire Wire Line
+	1850 7050 2000 7050
+$Comp
+L power:-9VA #PWR01
+U 1 1 5E6B6584
+P 1700 6750
+F 0 "#PWR01" H 1700 6625 50  0001 C CNN
+F 1 "-9VA" V 1715 6877 50  0000 L CNN
+F 2 "" H 1700 6750 50  0001 C CNN
+F 3 "" H 1700 6750 50  0001 C CNN
+	1    1700 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5E6C0A8E
+P 7350 3050
+F 0 "RV2" H 7280 3096 50  0000 R CNN
+F 1 "100k" H 7280 3005 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 7350 3050 50  0001 C CNN
+F 3 "~" H 7350 3050 50  0001 C CNN
+	1    7350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5E6C0A94
+P 4200 3000
+F 0 "RV1" H 4131 3046 50  0000 R CNN
+F 1 "100k" H 4131 2955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 4200 3000 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 6650
+Wire Wire Line
+	1950 6650 2000 6650
+Wire Wire Line
+	1850 6650 1950 6650
+Wire Wire Line
+	1850 6650 1850 6600
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5D6CEEA8
+P 1950 6600
+F 0 "#FLG0103" H 1950 6675 50  0001 C CNN
+F 1 "PWR_FLAG" H 2018 6642 50  0000 L CNN
+F 2 "" H 1950 6600 50  0001 C CNN
+F 3 "~" H 1950 6600 50  0001 C CNN
+	1    1950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9VA #PWR0102
+U 1 1 5D2BECB7
+P 1850 6600
+F 0 "#PWR0102" H 1850 6475 50  0001 C CNN
+F 1 "+9VA" H 1865 6773 50  0000 C CNN
+F 2 "" H 1850 6600 50  0001 C CNN
+F 3 "" H 1850 6600 50  0001 C CNN
+	1    1850 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6750 1750 6700
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E68EEC7
+P 1750 6700
+F 0 "#FLG?" H 1750 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 6850 50  0000 C CNN
+F 2 "" H 1750 6700 50  0001 C CNN
+F 3 "~" H 1750 6700 50  0001 C CNN
+	1    1750 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6750 1700 6750
+Connection ~ 1750 6750
+$EndSCHEMATC
